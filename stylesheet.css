@@ -1,0 +1,138 @@
+body
+{margin:0;
+    }
+
+.navigation{
+    overflow: hidden;
+    background-color: black;
+}
+
+nav{
+    float:left;
+
+    position: center;
+    background: black;
+}
+
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+li{
+    display: inline-block;
+
+
+
+}
+
+.navigation .icon {
+    display: none;
+
+    color: white;
+
+}
+.down {
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid ;
+    margin-right: 10px;
+
+}
+
+.down .button {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.content a {
+    float: none;
+    color: #555;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+
+.navigation a:hover, .down:hover .button {
+    background-color: #555;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.content a:hover {
+    background-color: red;
+    color: black;
+}
+
+.down:hover .content {
+    display: block;
+}
+
+
+.navigation a:hover, .down:hover .button {
+    background-color: #555;
+    color: white;
+}
+
+
+
+.down:hover .content {
+    display: block;
+}
+@media screen and (max-width: 600px) {
+    .navigation a:not(:first-child), .down .button {
+        display: none;
+    }
+    .navigation a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navigation .responsive {position: relative;}
+    .navigation.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navigation.responsive .down {float: none;}
+    .navigation.responsive .content {position: relative;}
+    .navigation.responsive .down .button {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
